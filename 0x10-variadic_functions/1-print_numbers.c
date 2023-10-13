@@ -7,7 +7,7 @@
  * @separator: string to be printed between no.s
  * @n: no. of integers passed to the function
  *
- * Return:
+ * Return: void
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -21,10 +21,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		print_num = va_arg(num, int);
-		if (separator == NULL)
-			continue;
 		printf("%d", print_num);
-		if (i != 3)
+		if (i != 3 && separator != NULL)
 			printf("%s", separator);
 	}
 	va_end(num);
