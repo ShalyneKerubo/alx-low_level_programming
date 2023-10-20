@@ -3,6 +3,7 @@
 /**
  * _strlen - Returns the length of a string.
  * @s: A pointer to a character string
+ *
  * Return: The length of the string.
  */
 int _strlen(const char *s)
@@ -20,8 +21,10 @@ int _strlen(const char *s)
  * add_node_end - Add a new node to the end of a linked list.
  * @head: A pointer to a pointer to the head of the list
  * @str: The string to be stored in the new node
+ *
  * Return: A pointer to the newly added node
  */
+
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *n_node, *tmp_n_d;
